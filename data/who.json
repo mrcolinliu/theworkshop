@@ -1,0 +1,81 @@
+{
+  "items": 
+  [
+    {
+   "title": "Ester Lau",
+      "department": "the workshop",
+      "description": "Ester Fusce ac ultricies enim, nec fringilla dui. Phasellus tempor ac mauris et ullamcorper.",
+      "hero": "5.png"
+    },
+    {
+      "title": "Ivy Shi",
+      "department": "Fung Academy",
+      "description": "Colin Fusce ac ultricies enim, nec fringilla dui. Phasellus tempor ac mauris et ullamcorper.",
+      "hero": "3.png"
+    },
+    {
+      "title": "Margot Brent",
+      "department": "the workshop",
+      "description": "Margot Fusce ac ultricies enim, nec fringilla dui. Phasellus tempor ac mauris et ullamcorper.",
+      "hero": "6.png"
+    },    
+    {
+      "title": "Cherie Wong",
+      "department": "the workshop",
+      "description": "Cherie Fusce ac ultricies enim, nec fringilla dui. Phasellus tempor ac mauris et ullamcorper.",
+      "hero": "4.png"
+    },   
+    {
+      "title": "Carmen Taubman",
+      "department": "the workshop",
+      "description": "Carmen Fusce ac ultricies enim, nec fringilla dui. Phasellus tempor ac mauris et ullamcorper.",
+      "hero": "2.png"
+    },    
+    {
+      "title": "Ivy Shi",
+      "department": "Fung Academy",
+      "description": "Colin Fusce ac ultricies enim, nec fringilla dui. Phasellus tempor ac mauris et ullamcorper.",
+      "hero": "3.png"
+    },    
+    {
+      "title": "Omar Santo",
+      "department": "Operations",
+      "description": "Aya Fusce ac ultricies enim, nec fringilla dui. Phasellus tempor ac mauris et ullamcorper.",
+      "hero": "1.png"
+    },
+    {
+      "title": "Wendy Choi",
+      "department": "the workshop",
+      "description": "Jeff Fusce ac ultricies enim, nec fringilla dui. Phasellus tempor ac mauris et ullamcorper.",
+      "hero": "7.png"
+    },    
+    {
+      "title": "Carmen Taubman",
+      "department": "the workshop",
+      "description": "Carmen Fusce ac ultricies enim, nec fringilla dui. Phasellus tempor ac mauris et ullamcorper.",
+      "hero": "2.png"
+    },    
+    {
+      "title": "Ester Lau",
+      "department": "the workshop",
+      "description": "Ester Fusce ac ultricies enim, nec fringilla dui. Phasellus tempor ac mauris et ullamcorper.",
+      "hero": "5.png"
+    },    
+    {
+      "title": "Omar Santo",
+      "department": "Operations",
+      "description": "Jo Fusce ac ultricies enim, nec fringilla dui. Phasellus tempor ac mauris et ullamcorper.",
+      "hero": "1.png"
+    },    
+    {
+      "title": "Yi Hoo",
+      "department": "the workshop",
+      "description": "Ong Fusce ac ultricies enim, nec fringilla dui. Phasellus tempor ac mauris et ullamcorper.",
+      "hero": "8.png"
+    }
+
+
+
+
+  ]
+}

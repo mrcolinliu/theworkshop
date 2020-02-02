@@ -1,0 +1,34 @@
+{
+  "section":"What we do",
+  "items": 
+  [
+    {
+      "block": "block2",
+      "title": "3D Printing workshops",
+      "description": "Our community if full of talented individuals. Meet Richard Lam from LF Sourcing, our very own 3D printing expert who has been voluntarily been running workshops for employees at Li & Fung. During each workshop Richard covers the history of 3D printing, why it is applicable to our business and then guides participants to create their very own 3D model! So far the workshop participants have created mooncake molds, keyrings, coasters, jewellery and more!",
+      "hero": "3d_hero.jpg",
+      "gallery": ["3d_print_1.jpg", "3d_print_2.jpg", "3d_print_3.jpg"]
+    },
+    {
+      "block": "block4",
+      "title": "The Kitchen",
+      "description": "The Kitchen is Li & Fung’s Internal crowdsourcing challenge platform. Challenges are proposed by different business units, and the workshop team works closely with the unit to make it happen! Our most recent challenge? Collaborating with LF client Betabrand (an ecommerce store headquartered in San Francisco) who issued a challenge to any LF employee to design their next new travel product. The winner of the challenge will receive royalties from future sales (and by doing so, we are empowering internal entrepreneurs!).",
+      "hero": "kitchen_hero.jpg",
+      "gallery": ["kitchen_2.jpg", "kitchen_2.jpg"]
+    },
+    {
+      "block": "block7",
+      "title": "KNIQUE Popup",
+      "description": "The LF Sweaters team had excess luxury yarn and wanted to salvage it. They decided to trial the concept of ‘upcycling’ which led to the creation of a beautifully designed, 17-piece collection. At that point the business wanted to know: would the collection sell, and did the concept behind the brand (sustainable luxury fashion) present a viable business opportunity worth exploring? The team reached out to us at the wørkshop, to connect with the right people and expertise to put this experiment into motion. Seven teams came together (LF Sweater Vertical, Corporate Communications, Creative & Design, Digital, the wørkshop, GTS and LF Beauty) to test, experiment and collaborate around the brand story, e-commerce store and Pop-Up Shop that was opened in The HIVE. Want to find out how the experiment fared? You can read more here: https://onefamily.lfapps.net/article/20378",
+      "hero": "knique_hero.jpg",
+      "gallery": ["knique_1.jpg", "knique_2.jpg", "knique_3.jpg"]      
+    },
+    {
+      "block": "block9",
+      "title": "G Session",
+      "description": "The Guerrilla Sessions are a speakers series designed to bring the best minds together around big ideas relevant to our community. From fireside chats to field trips to live streaming, anything goes. Known affectionately as gsessions, the events are open to anyone who wants to be part of the conversation, connect with our community or are simply curious about innovation. Originated in Hong Kong, we are now expanding the Guerrilla sessions to other offices including Shanghai.",
+      "hero": "gsess_hero.jpg",
+      "gallery": ["gsess1.jpg", "gsess2.jpg", "gsess3.jpg", "gsess5.jpg", "gsess6.jpg", "gsess7.jpg", "gsess8.jpg", "gsess9.jpg"]
+    }
+  ]
+}
