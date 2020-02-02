@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href="css/styles.css">
+
+
+<style type="text/css">
+  
+/*
+  Demo Styles: NOT REQUIRED
+*/
+html,
+body {
+  margin: 0;
+  height: 100%
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+section {
+  text-align: center;
+  color: #EFEFEF;
+}
+
+.full-screen {
+  height: 100%; /* makes panels the entire window height */
+}
+
+.blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue {
+  background-color: #3883d8;
+}
+.red {
+  background-color: #cf3535;
+}
+.orange {
+  background-color: #ea6300;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+
+
+<script>
+  // init controller
+  var controller = new ScrollMagic.Controller();
+</script>
+ 
+<div class="spacer s1"></div>
+<div id="trigger4" class="spacer s1"></div>
+<div class="spacer s0"></div>
+<div class="animate4 box2 black outline" style="left: 700px;">
+  <p>Tchoo Tchoo!</p>
+  <a href="#" class="viewsource">view source</a>
+</div>
+<div class="animate4 box2 black outline" style="left: 700px;"></div>
+<div class="animate4 box2 black outline" style="left: 700px;"></div>
+<div class="animate4 box2 black outline" style="left: 700px;"></div>
+<div class="animate4 box2 black outline" style="left: 700px;"></div>
+<div class="animate4 box2 black outline" style="left: 700px;"></div>
+<div class="animate4 box2 black outline" style="left: 700px;"></div>
+<div class="animate4 box2 black outline" style="left: 700px;"></div>
+<div class="animate4 box2 black outline" style="left: 700px;"></div>
+<div class="animate4 box2 black outline" style="left: 700px;"></div>
+<div class="spacer s2"></div>
+<script>
+
+
+</script>
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/holder.js"></script>
+
+<!-- Custom JavaScript for this theme -->
+<script src="js/scrolling-nav.js"></script>
+
+<!-- Load JSON files for what and who content -->
+<script src="js/loadJson.js"></script>
+
+<!-- Load JSON files for what and who content -->
+<script src="js/scrollMagic.js"></script>
+
+<script type="text/javascript">
+
+// init ScrollMagic Controller
+var controller = new ScrollMagic.Controller();
+
+// Scene Handler
+var scene = new ScrollMagic.Scene({
+  triggerElement: "#pinned-trigger1", // point of execution
+  duration: $(window).height() - 100, // pin element for the window height - 1
+  triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+  reverse: true // allows the effect to trigger when scrolled in the reverse direction
+})
+.setPin("#pinned-element1"); // the element we want to pin
+
+
+// Scene2 Handler
+var scene2 = new ScrollMagic.Scene({
+  triggerElement: "#pinned-trigger2", // point of execution
+  duration: 200 // pin the element for a total of 400px
+})
+
+.setPin("#pinned-element2"); // the element we want to pin
+
+
+
+// Add Scenes to ScrollMagic Controller
+controller.addScene([
+  scene,
+  scene2
+]);
+
+
+
+// build tween
+var tween = TweenMax.staggerFromTo(".animate4", 2, {left: 700}, {left: 0, ease: Back.easeOut}, 0.15);
+
+// build scene
+var scene = new ScrollMagic.Scene({triggerElement: "#trigger4", duration: 300})
+        .setTween(tween)
+        .addIndicators({name: "staggering"}) // add indicators (requires plugin)
+        .addTo(controller);
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

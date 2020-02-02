@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Video popup</title>
+		<meta charset="utf-8">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+
+		<link rel="stylesheet" href="css/magnific-popup.css" />
+
+		<link rel="stylesheet" href="css/popup.css" />
+		<script src="js/popup.js"></script>
+
+		<script>
+		var hidePopup = function(){
+			$.magnificPopup.close();
+		}
+
+		var showPopup = function(id, title, description, callbacks) {
+		    //for the callback available, please visit http://dimsemenov.com/plugins/magnific-popup/documentation.html for details
+		    callbacks = callbacks || {};
+
+		    $(id+" .title" ).text( title );
+		    $(id+" .description" ).text( description );
+
+		    $.magnificPopup.open({
+		        items: {
+		            src: id,
+		            title: 'Title Test Here'
+		        },
+		        type: 'inline',
+		        showCloseBtn: false,
+		        fixedContentPos: true,
+		        callbacks: callbacks,
+		        closeOnBgClick: $(id).data("lock") != true
+		    }, 0);
+		}
+		</script>
+	</head>
+	<body>
+		<table class="center">
+			<tr>
+				<td>
+					<button class="button"onclick="javascript:showPopup('#project-gallery', 'Title', 'Description')">tnc popup</button>
+					<br/>
+					<br/>
+					<button class="button selection">Show the video</button>
+					<br/>
+					<br/>
+			    	<div class="selection_wrapper"></div>
+				</td>
+			</tr>
+		</table>
+
+
+			<div id="popup_selection" class="popup mfp-hide">
+				<div class="popup_content">
+				    <div class="video-container">
+				    	<iframe width="560" height="315" src="https://www.youtube.com/embed/T01XxPKJtgg" frameborder="0" allowfullscreen></iframe>
+			    	</div>
+					<div class="clear"></div>
+				</div>
+				<button onclick="javascript:hidePopup();" class="button close">x</button>
+			</div>
+
+
+			<div id="project-gallery" class="popup mfp-hide">
+				<div class="popup_content">
+				    <h2 class="title"></h2>
+				    <p class="description"></p>
+					<div class="row content">
+						<div class="col-lg-4">
+							 <img class="img-fluid" src="images/kitchen_3.jpg" >
+						</div>
+						<div class="col-lg-4">
+							 <img class="img-fluid" src="images/kitchen_3.jpg" >
+						</div>
+						<div class="col-lg-4">
+							 <img class="img-fluid" src="images/kitchen_3.jpg" >
+						</div>
+					</div>
+				</div>
+				<button onclick="javascript:hidePopup();" class="button close">x</button>
+			</div>
+
+	</body>
+</html>
