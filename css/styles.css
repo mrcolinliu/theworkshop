@@ -1,0 +1,730 @@
+/*!
+ * Start Bootstrap - Half Slider (http://startbootstrap.com/template-overviews/half-slider)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-half-slider/blob/master/LICENSE)
+
+ * Slack
+ * #eeb625
+ * #e6176f
+ * #48c4a0
+ * blue #83d2e1
+ * 
+ * Brief
+ * yellow #ffd500
+ * blue 44d9e6
+ * pink dc0071
+ * green 29dcc2
+ * 
+ */
+
+html {
+  font-size: 18px;
+}
+
+header {
+  position: relative; 
+  z-index: 1;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  background-image: url(../images/hero.png);
+  width: 100%;
+  height: 950px;
+  background-color: #060;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+}
+
+.horizontal-mobile {
+  display: none;
+}
+
+h2 {
+  border-bottom: 1px solid #E5E5E5;
+  padding-bottom: 2rem;
+}
+
+.hightlight {
+  color: #dc0071;
+}
+
+#why h2 {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+.thumbnails {
+  /* margin-bottom: 15px; */
+  position: relative;
+  padding: 5px;
+}
+
+.thumbnails:hover .image-bg {
+  /* opacity: 0.3; */
+  filter: alpha(opacity=30); /* For IE8 and earlier */
+}
+
+.thumbnails:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+  cursor: pointer;
+}
+
+.image-bg {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+
+
+
+.image-dummy{
+  opacity: 0;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  padding: 0px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+  margin: 0;
+}
+
+.overlay-responsive {
+  text-align: center;
+}
+
+#what .overlay .text, .overlay .overlay-wrapper {
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#what .thumbnails .text {
+  font-size: 2.5rem; 
+ 
+}
+
+
+
+/*section {
+  border-bottom: 1px solid red;
+}*/
+
+.section-title {
+  width: 30%;
+}
+
+.card {
+  width: 20rem;
+}
+.card .card-background {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top:0px;
+  left:0px;
+  z-index: 1;
+  transition: all 0.2s;
+}
+
+#what .card .card-background {
+  background-color: #ffd500;
+}
+
+#contact .card .card-background {
+  background-color: #83d2e1; 
+}
+
+#who .card .card-background  {
+  background-color: #e6176f;
+}
+
+.who-1, .who-2, .who-3, .who-7, .who-8, .who-9 {
+  left: -200px;
+}
+
+.who-4, .who-5, .who-6, .who-10, .who-11, .who-12 {
+  left: +200px;
+}
+
+#why .card .card-background {
+  background-color: #48c4a0;
+}
+
+#why-intro {
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 30px;
+
+}
+
+
+
+
+/* Why styling */
+.jumbotron {
+  position: relative; 
+  background-size: cover;
+  background-image: url(../images/slack.jpg);
+  background-repeat: no-repeat;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: #ffffff;
+}
+
+.jumbotron .container {
+  position: relative;
+}
+
+.jumbotron h1 {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.jumbotron p {
+  font-weight: 400;
+
+}
+
+.lists, .lists ul {
+  margin-top: 0;
+  padding-left: 2em;
+  list-style-type: none;
+  font-size: 1.1rem;
+}
+
+.lists li:before {
+  position: absolute;
+  margin-left: -1.3em;
+  font-weight: bold;
+}
+.lists li.tick:before {
+  content: "\2713";
+  color: darkgreen;
+}
+
+
+
+#slack .card {
+  /* background-color: #83d2e1; */
+}
+
+
+
+.summaryList {
+  width: 70%;
+  margin-bottom: 60px;
+}
+
+.popupThumbnail {
+  padding: 5px;
+}
+
+
+.card {
+    padding: 50px 110px;
+    margin: 100px 20%;
+    width: 24rem;
+    background: transparent;
+    border: none;
+}
+
+.card-title {
+    white-space: nowrap;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-left: 140%;
+    transition: all 0.2s;
+    position: relative;
+    z-index: 2;
+}
+
+.card-subtitle {
+    color: black !important;
+    font-size: 1.6rem;
+    white-space: nowrap;
+    transition: all 0.2s;
+    z-index: 2;
+    position: relative;
+}
+
+.thumbnails .wrapper {
+    position: relative;
+}
+
+#who .thumbnails .overlay .text {
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    font-size: 22rem;
+    font-weight: 900;
+    color: white;
+    background-color: #f9f9f9;
+    line-height: 19rem;
+    word-wrap: break-word;
+    overflow: hidden;
+    padding-top: 5%;
+    z-index: 0;
+}
+
+
+
+body {
+    position: relative;
+}
+
+footer {
+    z-index: 1;
+    position: relative;
+}
+
+section {
+    overflow: hidden;
+}
+
+.card .dash {
+    background-color: black;
+    width: 100px;
+    height: 10px;
+    margin-top: 20px;
+    /* margin-left: 60px; */
+    position: absolute;
+    right: -50px;
+    transition: all 0.2s;
+    z-index: 2;
+}
+.card:hover .dash{
+  
+transform: translate(-280px, -30px) rotate(30deg);
+}
+.card:hover .card-title{
+  
+transform: translate(50px, 0px) rotate(0deg);
+}
+.card:hover .card-subtitle{
+  
+transform: translate(150px, 0px) rotate(0deg);
+}
+.card:hover .card-background{
+  
+transform: translate(0px, 0px) rotate(-5deg) scale(1.1);
+  
+box-shadow: 13px 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*
+* WHAT Section 
+* Colors: orange #ff9d00; green #bedc2f; yellow #ffd500;
+*
+*/
+.z-index-2 {
+  z-index: 2;
+}
+
+.square {
+  position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: #CCCCCC;
+
+}
+
+.vertical {
+  position: relative;
+    width: 100%;
+    padding-bottom: 200%;
+    background-color: #FF00FF;
+
+}
+
+
+.horizontal {
+  position: relative;
+    width: 100%;
+    padding-bottom: 50%;
+    background-color: #800000;
+
+}
+
+#what .wrapper {
+  width: 100%;
+  height: 100%;
+  position:absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 5px;
+
+    background-color: #FFFFFF;
+}
+
+.dark-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.dark-overlay-2 {
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.content-black, .content-white {
+    position:relative;
+
+    height:100%; /* = 100% - 2*10% padding */
+    width:100%; /* = 100% - 2*5% padding */
+    text-align: center;
+    background-color: #cccccc;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    justify-content: center!important;  /* for flex display only - bs d-flex*/
+    align-items: center; /* for flex display only - bs d-flex*/
+
+}
+
+.content-black {
+    color: #000000;
+    line-height: 30px;
+    font-size: 2rem;
+}
+
+.content-white {
+    color: #FFFFFF;
+    line-height: 70px;
+    font-size: 2.5rem;
+
+}
+
+.block1, .block2, .block3, .block4, .block5 {
+  background-size: cover;
+  background-position: center center;
+
+}
+
+#block1, #block5, #block8, #block10 {
+  left: -50px;
+  z-index: 10;
+}
+
+.block1 {
+    background-color: #83d2e1;    
+}
+
+.block3 {
+    background-image: url("../images/3d_print_3.jpg");
+}
+
+.block5 {
+    background-color: #ffd500;    
+}
+
+
+.block6 {
+    background-image: url("../images/kitchen_2.jpg");
+
+}
+
+.block7:hover,.block9:hover,.block2:hover, .block4:hover {
+  filter: brightness(70%);
+}
+
+.block8 {
+  background-color: #48c4a0;
+}
+
+.block10 {
+  background-color: #e6176f;
+}
+
+.block11 {  
+  background-image: url("../images/gsess2.jpg");
+}
+
+.bold-capitalize {
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 45px;    
+}
+
+.bold-lowercase {
+    font-weight: 600;
+    line-height: 45px;    
+}
+
+#contact .wrapper {
+  padding: 15px;
+
+}
+
+#slack .container {
+  margin-top: 4rem;
+}
+
+blockquote{
+  display:block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 2rem 20px;
+  position: relative;
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify;
+  
+  /*Borders - (Optional)*/
+  border-left: 15px solid #390e39;
+  
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+
+
+
+
+}
+
+/*blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  
+
+/*font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  
+  position: absolute;
+  left: 10px;
+  top:5px;
+}*/
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}
+
+blockquote a{
+  text-decoration: none;
+  background: #eee;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #c76c0c;
+}
+
+blockquote a:hover{
+ color: #666;
+}
+
+blockquote em{
+  font-style: italic;
+}
+
+.learn-more {
+  margin-top: 20%;
+}
+
+#learn-content {
+  text-align: center;
+
+}
+
+#learn-content h2 {
+  text-align: left;
+
+}
+
+#learn-content .slack-logo {
+  margin-bottom: 1.5rem;  
+}
+
+.slack-logo {
+  float: right;  
+}
+
+.screenshot {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+  margin-bottom: 15px;
+}
+
+.anchor{
+  display: block;
+  height: 70px;
+  margin-top: -70px;
+  visibility: hidden;
+} 
+
+/*
+*
+* Mobile
+*
+*/
+@media only screen and (max-width: 767px) {
+
+  header {
+    background-image: url(../images/hero_mobile.png); 
+    height: 450px;
+  }
+
+  .horizontal-mobile {
+    display: block;
+  }
+
+  .horizontal {
+    display: none;
+
+  }
+
+
+  #block1, #block5, #block8, #block10 {
+    left: -50px;
+    z-index: 10;
+  }
+
+  .container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+.card {
+    padding: 50px 10px;
+    margin: 100px 0;
+    width: 100% !important;
+}
+
+.card-title {
+    margin-left: 10%;
+
+}
+
+.card .dash {
+    left: 100px;
+ 
+}
+
+  .overlay-responsive {
+    display: block;
+  }
+
+  .overlay-responsive .text {
+    color: #000000;
+    font-size: 1.5rem;
+  }
+
+  .overlay-responsive .department {
+    color: #e6176f;    
+  }
+
+  .card-subtitle {
+      color: black !important;
+      font-size: 1rem;
+      white-space: normal;
+      transition: all 0.2s;
+      z-index: 2;
+      position: relative;
+
+  }
+
+
+
+
+}
+/* 
+*
+* Medium 
+*
+*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .content-black {
+      color: #000000;
+      line-height: 30px;
+      font-size: 1.5rem;
+  }
+
+  .content-white {
+      color: #FFFFFF;
+    line-height: 50px;
+    font-size: 1.7rem;
+  }
+
+  .bold-capitalize {
+      text-transform: capitalize;
+      font-weight: 600;
+      line-height: 30px;
+  }
+  .bold-lowercase {
+      font-weight: 600;
+      line-height: 30px;
+  }
+
+
+  .overlay-responsive {
+    display: none;    
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+  .overlay-responsive {
+    display: none;    
+  }
+}
+
+.triggeringPoint {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    bottom: 100px;
+    right: 00px;
+}
